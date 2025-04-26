@@ -11,7 +11,7 @@ jobs:
       - name: List and Readfile
         run: |
             echo "My first Github Actions Job"
-            ls ltra
+            ls -ltra
             cat README.md
       
       - name: GENERATE ASCII Artwork 
