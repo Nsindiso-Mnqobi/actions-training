@@ -1,4 +1,4 @@
-name: Generate ASCII Artwork 
+name: Generate ASCII Artwork - Multi
 
 on:
   push 
@@ -15,11 +15,11 @@ jobs:
 
     - name: Upload Dragon text file
       uses: actions/upload-artifact@v4
-        with:
-          name: dragon-text-file
-          path: dragon.txt
+      with:
+        name: dragon-text-file
+        path: dragon.txt
 
-  test_Job_2
+  test_Job_2:
     needs: build_jobs_1
     runs-on: ubuntu-latest
     steps:
